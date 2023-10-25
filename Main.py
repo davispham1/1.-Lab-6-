@@ -6,7 +6,6 @@ def encoder(password):
     return string
 
 
-
 while True:
     print('Menu')
     print('-------------')
