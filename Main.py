@@ -5,6 +5,12 @@ def encoder(password):
         string = string + str(int(password[i]) + 3)
     return string
 
+def decoder(password):
+    string = ''
+    for i in range(len(password)):
+        string = string + str(int(password[i]) - 3)
+    return string
+
 
 while True:
     print('Menu')
