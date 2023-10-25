@@ -1,6 +1,10 @@
 
-'''def encoder(password):
-    for i in range(len(password))'''
+def encoder(password):
+    string = ''
+    for i in range(len(password)):
+        string = string + str(int(password[i]) + 3)
+    return string
+
 
 
 while True:
@@ -12,9 +16,10 @@ while True:
     option = input('Please enter an option: ')
     if option == '1':
         password = input('Please enter your password to encode: ')
-        encoded_password = # encode(password)
+        encoded_password = encoder(password)
         print('Your password has been encoded and stored!\n')
     elif option == '2':
+        print(f'The encoded password is {encoded_password}, and the original password is ')
 
 
 
